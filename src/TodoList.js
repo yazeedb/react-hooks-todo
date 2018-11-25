@@ -14,12 +14,13 @@ const TodoList = ({ todos, deleteTodo }) => (
         <Checkbox tabIndex={-1} disableRipple />
         <ListItemText primary={todo} />
         <ListItemSecondaryAction>
-          <IconButton aria-label="Delete">
-            <DeleteIcon
-              onClick={() => {
-                deleteTodo(index);
-              }}
-            />
+          <IconButton
+            aria-label="Delete"
+            onClick={() => {
+              deleteTodo(index);
+            }}
+          >
+            <DeleteIcon />
           </IconButton>
         </ListItemSecondaryAction>
       </ListItem>
