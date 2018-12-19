@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import useInputState from './useInputState';
 
 const TodoForm = ({ saveTodo }) => {
-  const { value, reset, onChange } = useInputState('');
+  const { value, reset, onChange } = useInputState();
 
   return (
     <form
